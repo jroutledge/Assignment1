@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sizebook</string>
+    <string name="new_record_button">Add New Record</string>
+    <string name="sizebook">Welcome to Sizebook</string>
+    <string name="record_name">Name</string>
+    <string name="record_neck">Neck</string>
+    <string name="record_bust">Bust</string>
+    <string name="record_chest">Chest</string>
+    <string name="record_waist">Waist</string>
+    <string name="record_hip">Hip</string>
+    <string name="record_inseam">Inseam</string>
+    <string name="record_button">Add</string>
+    <string name="record_comment">Comment</string>
+</resources>
