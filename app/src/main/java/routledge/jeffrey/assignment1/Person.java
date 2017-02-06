@@ -32,7 +32,7 @@ public class Person {
     }
 
     public String toString() {
-        //when we want to add more things to textview do it herreeee
+        //when we want to add more things to textview do it here
         String s = "";
         s += name + " " ;
         if ( neck != 0 ) {
@@ -66,25 +66,19 @@ public class Person {
         return s;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public float getNeck() {
-        return neck;
-    }
+    public float getNeck() { return neck; }
 
     public void setNeck(float neck) {
         this.neck = neck;
     }
 
-    public float getBust() {
-        return bust;
-    }
+    public float getBust() { return bust; }
 
     public void setBust(float bust) {
         this.bust = bust;

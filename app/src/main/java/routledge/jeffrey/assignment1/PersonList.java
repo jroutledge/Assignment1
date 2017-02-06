@@ -15,18 +15,13 @@ public class PersonList {
         if (person_list == null) {
             person_list = new ArrayList<Person>();
         }
-        //return person_list;
     }
 
-    public static ArrayList<Person> getPerson_list() {
-        return person_list;
-    }
-
-    public void delete_list(Person P){
+    public void deleteList(Person P){
         person_list.remove(P);
     }
 
-    public void add_person(Person p) {
+    public void addPerson(Person p) {
         person_list.add(p);
     }
 

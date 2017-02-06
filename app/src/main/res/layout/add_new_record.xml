@@ -30,6 +30,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
+        android:hint="Chest"
+        android:id="@+id/chest" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
         android:hint="@string/record_waist"
         android:id="@+id/waist" />
 
@@ -59,5 +66,11 @@
         android:text="@string/record_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/record_button" />
+        android:id="@+id/record_add_button" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record_delete_button" />
 </LinearLayout>
