@@ -3,6 +3,8 @@ package routledge.jeffrey.assignment1;
 import android.view.View;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -11,7 +13,6 @@ import java.util.Date;
 
 public class Person {
     public String name;
-    public Date date;
     public float neck;
     public float bust;
     public float chest;
@@ -22,7 +23,6 @@ public class Person {
 
     public Person(String name) {
         this.name = name;
-        date = new Date();
         neck =  0f;
         bust = 0f;
         chest = 0f;
@@ -54,8 +54,13 @@ public class Person {
             s += inseam + " " ;
         }
         if ( !comment.equals("")) {
-            s += comment + " " ;
+            s += comment + " ";
         }
+        s += "Last edited on: ";
+        // accessed on Feb 5, 2017
+        // code from:
+        // http://stackoverflow.com/questions/8654990/how-can-i-get-current-date-in-android
+        String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         s += date;
 
         return s;
@@ -67,14 +72,6 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public float getNeck() {

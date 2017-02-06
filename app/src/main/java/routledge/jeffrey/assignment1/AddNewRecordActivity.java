@@ -29,31 +29,39 @@ public class AddNewRecordActivity extends AppCompatActivity {
 
                 if (!edit.getText().toString().equals("")) {
                     Person p = new Person(edit.getText().toString());
-                    //Toast toast = Toast.makeText(getApplicationContext(), edit.getText().toString(), Toast.LENGTH_SHORT);
-                    // toast.show();
 
                     // accessed on feb 4, 2017
-                    //code from:
-                    //http://stackoverflow.com/questions/4229710/string-from-edittext-to-float
+                    // code from:
+                    // http://stackoverflow.com/questions/4229710/string-from-edittext-to-float
                     EditText edt = (EditText) findViewById(R.id.neck);
-                    float neck = Float.valueOf(edt.getText().toString());
-                    p.setNeck(neck);
+                    if ( !edt.getText().toString().equals("") ) {
+                        float neck = Float.valueOf(edt.getText().toString());
+                        p.setNeck(neck);
+                    }
 
                     edt = (EditText) findViewById(R.id.bust);
-                    float bust = Float.valueOf(edt.getText().toString());
-                    p.setBust(bust);
+                    if ( !edt.getText().toString().equals("")) {
+                        float bust = Float.valueOf(edt.getText().toString());
+                        p.setBust(bust);
+                    }
 
                     edt = (EditText) findViewById(R.id.waist);
-                    float waist = Float.valueOf(edt.getText().toString());
-                    p.setWaist(waist);
+                    if ( !edt.getText().toString().equals("")) {
+                        float waist = Float.valueOf(edt.getText().toString());
+                        p.setWaist(waist);
+                    }
 
                     edt = (EditText) findViewById(R.id.hip);
-                    float hip = Float.valueOf(edt.getText().toString());
-                    p.setHip(hip);
+                    if ( !edt.getText().toString().equals("")) {
+                        float hip = Float.valueOf(edt.getText().toString());
+                        p.setHip(hip);
+                    }
 
                     edt = (EditText) findViewById(R.id.inseam);
-                    float inseam = Float.valueOf(edt.getText().toString());
-                    p.setInseam(inseam);
+                    if ( !edt.getText().toString().equals("") ) {
+                        float inseam = Float.valueOf(edt.getText().toString());
+                        p.setInseam(inseam);
+                    }
 
                     edt = (EditText) findViewById(R.id.record_comment);
                     String comment = edt.getText().toString();
