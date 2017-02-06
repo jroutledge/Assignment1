@@ -9,6 +9,7 @@ import java.util.Date;
 
 /**
  * Created by jeffreyroutledge on 2017-01-23.
+ * This class stores the data of the records for a person that the user creates.
  */
 
 public class Person {
@@ -21,6 +22,11 @@ public class Person {
     public float inseam;
     public String comment;
 
+    /**
+     * Instantiates a new Person.
+     *
+     * @param name
+     */
     public Person(String name) {
         this.name = name;
         neck =  0f;
@@ -31,6 +37,11 @@ public class Person {
         comment = "";
     }
 
+    /**
+     * Makes the person into a readable string.
+     *
+     * @return
+     */
     public String toString() {
         //when we want to add more things to textview do it here
         String s = "";

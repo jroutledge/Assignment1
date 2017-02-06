@@ -12,6 +12,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+ * This class is the main view class of the program.
+ * It displays the record that the user has created.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Person> personList;
@@ -19,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private PersonList pl = new PersonList();
     private ListView oldPersonList;
 
-
+    /** Called when the activity is first created */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

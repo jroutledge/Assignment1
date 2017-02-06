@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JROUTLED-Sizebook.iml" filepath="$PROJECT_DIR$/JROUTLED-Sizebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jroutled-Sizebook.iml" filepath="$PROJECT_DIR$/jroutled-Sizebook.iml" />
     </modules>
   </component>
 </project>

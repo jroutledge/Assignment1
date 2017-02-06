@@ -9,10 +9,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * This class handles creating new records for people.
+ */
 public class AddNewRecordActivity extends AppCompatActivity {
 
     private PersonList personList = new PersonList();
     @Override
+    /** Called when the activity is first created. */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_new_record);
